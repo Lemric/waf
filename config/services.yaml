@@ -1,0 +1,6 @@
+services:
+  App\WafBundle\EventListener\WafRequestListener:
+    arguments:
+      $validators: !tagged_iterator lemric.waf
+    tags:
+      - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest }
