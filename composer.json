@@ -2,10 +2,14 @@
   "name": "lemric/waf",
   "description": "Web Application Firewall for Symfony",
   "keywords": ["waf", "symfony"],
+  "support": {
+    "issues": "https://github.com/Lemric/waf/issues",
+    "security": "https://github.com/Lemric/waf/security"
+  },
   "authors": [
     {
       "name": "Dominik Labudzinski",
-      "email": "dominik@Labudzinski.com",
+      "email": "dominik@labudzinski.com",
       "homepage": "https://labudzinski.com"
     },
     {
@@ -13,6 +17,7 @@
       "homepage": "https://lemric.com"
     }
   ],
+  "license": "GPL-3.0-or-later",
   "autoload": {
     "psr-4": {
       "Lemric\\WAF\\": "src"
