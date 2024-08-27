@@ -34,5 +34,8 @@ class LemricWAFExtension extends Extension
         $container->setParameter('waf.xssPatterns', $config['xssPatterns']);
         $container->setParameter('waf.sqlPatterns', $config['sqlPatterns']);
         $container->setParameter('waf.allowedOrigins', $config['allowedOrigins']);
+        $container->setParameter('waf.allowedMimeTypes', $config['allowedMimeTypes']);
+        $container->setParameter('waf.blockedMimeTypes', $config['blockedMimeTypes']);
+        $container->setParameter('waf.blockedExtensions', $config['blockedExtensions']);
     }
 }

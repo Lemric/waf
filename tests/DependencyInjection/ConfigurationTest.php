@@ -32,6 +32,9 @@ class ConfigurationTest extends TestCase
             'blockedPlatforms' => [],
             'allowedDevices' => [],
             'blockedDevices' => [],
+            'allowedMimeTypes' => [],
+            'blockedMimeTypes' => [],
+            'blockedExtensions' => [],
             'xssPatterns' => [
                 '#(<[^>]+[\x00-\x20\"\'\/])(form|formaction|on\w*|style|xmlns|xlink:href)[^>]*>?#iUu',
                 '!((java|live|vb)script|mocha|feed|data):(\w)*!iUu',
@@ -80,6 +83,9 @@ class ConfigurationTest extends TestCase
             'blockedDevices' => ['Tablet'],
             'xssPatterns' => ['#<script>#'],
             'sqlPatterns' => ['#SELECT \* FROM users#'],
+            'allowedMimeTypes' => [],
+            'blockedMimeTypes' => [],
+            'blockedExtensions' => [],
         ];
 
         $this->assertSame($expectedConfig, $config);
@@ -103,6 +109,9 @@ class ConfigurationTest extends TestCase
             'blockedPlatforms' => [],
             'allowedDevices' => [],
             'blockedDevices' => [],
+            'allowedMimeTypes' => [],
+            'blockedMimeTypes' => [],
+            'blockedExtensions' => [],
             'xssPatterns' => [
                 '#(<[^>]+[\x00-\x20\"\'\/])(form|formaction|on\w*|style|xmlns|xlink:href)[^>]*>?#iUu',
                 '!((java|live|vb)script|mocha|feed|data):(\w)*!iUu',

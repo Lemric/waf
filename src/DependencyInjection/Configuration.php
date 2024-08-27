@@ -73,6 +73,24 @@ class Configuration implements ConfigurationInterface
                     ->defaultValue([])
                 ->end()
 
+                ->arrayNode('allowedMimeTypes')
+                    ->info('List of allowed mime types')
+                    ->scalarPrototype()->end()
+                    ->defaultValue([])
+                ->end()
+
+                ->arrayNode('blockedMimeTypes')
+                    ->info('List of blocked mime types')
+                    ->scalarPrototype()->end()
+                    ->defaultValue([])
+                ->end()
+
+                ->arrayNode('blockedExtensions')
+                    ->info('List of blocked extensions')
+                    ->scalarPrototype()->end()
+                    ->defaultValue([])
+                ->end()
+
                 ->arrayNode('xssPatterns')
                     ->info('Patterns for detecting XSS attacks')
                     ->scalarPrototype()->end()
